@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,17 @@
 		D77495C726314A360031E0E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D774959C26314A350031E0E4 /* ContentView.swift */; };
 		D77495C826314A360031E0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D774959D26314A360031E0E4 /* Assets.xcassets */; };
 		D77495C926314A360031E0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D774959D26314A360031E0E4 /* Assets.xcassets */; };
+		D77495E1263152270031E0E4 /* DecryptionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77495E0263152270031E0E4 /* DecryptionUtil.swift */; };
+		D77495E2263152270031E0E4 /* DecryptionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77495E0263152270031E0E4 /* DecryptionUtil.swift */; };
+		D77495E926315A200031E0E4 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D77495E826315A200031E0E4 /* CodeScanner */; };
+		D77495F026315A560031E0E4 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D77495EF26315A560031E0E4 /* CodeScanner */; };
+		D77495F826315E0D0031E0E4 /* DecrypteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D77495F726315E0D0031E0E4 /* DecrypteHelper.m */; };
+		D77495F926315E0D0031E0E4 /* DecrypteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D77495F726315E0D0031E0E4 /* DecrypteHelper.m */; };
+		D7749600263162670031E0E4 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D77495FF263162670031E0E4 /* CryptoSwift */; };
+		D7749606263162770031E0E4 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D7749605263162770031E0E4 /* CryptoSwift */; };
+		D774960C263172FB0031E0E4 /* Tests_CryptoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D774960B263172FB0031E0E4 /* Tests_CryptoUtil.swift */; };
+		D7749615263176350031E0E4 /* DecryptionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77495E0263152270031E0E4 /* DecryptionUtil.swift */; };
+		D774961B263178950031E0E4 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D774961A263178950031E0E4 /* CryptoSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,11 @@
 		D77495BD26314A360031E0E4 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77495C126314A360031E0E4 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D77495C326314A360031E0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77495E0263152270031E0E4 /* DecryptionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionUtil.swift; sourceTree = "<group>"; };
+		D77495F526315E0C0031E0E4 /* gk8 (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gk8 (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		D77495F626315E0C0031E0E4 /* gk8 (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gk8 (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		D77495F726315E0D0031E0E4 /* DecrypteHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecrypteHelper.m; sourceTree = "<group>"; };
+		D774960B263172FB0031E0E4 /* Tests_CryptoUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_CryptoUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77495E926315A200031E0E4 /* CodeScanner in Frameworks */,
+				D7749600263162670031E0E4 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77495F026315A560031E0E4 /* CodeScanner in Frameworks */,
+				D7749606263162770031E0E4 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D774961B263178950031E0E4 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +113,7 @@
 				D77495B526314A360031E0E4 /* Tests iOS */,
 				D77495C026314A360031E0E4 /* Tests macOS */,
 				D77495A326314A360031E0E4 /* Products */,
+				D77495EE26315A560031E0E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +123,10 @@
 				D774959B26314A350031E0E4 /* gk8App.swift */,
 				D774959C26314A350031E0E4 /* ContentView.swift */,
 				D774959D26314A360031E0E4 /* Assets.xcassets */,
+				D77495E0263152270031E0E4 /* DecryptionUtil.swift */,
+				D77495F726315E0D0031E0E4 /* DecrypteHelper.m */,
+				D77495F526315E0C0031E0E4 /* gk8 (iOS)-Bridging-Header.h */,
+				D77495F626315E0C0031E0E4 /* gk8 (macOS)-Bridging-Header.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -138,6 +164,7 @@
 			children = (
 				D77495B626314A360031E0E4 /* Tests_iOS.swift */,
 				D77495B826314A360031E0E4 /* Info.plist */,
+				D774960B263172FB0031E0E4 /* Tests_CryptoUtil.swift */,
 			);
 			path = "Tests iOS";
 			sourceTree = "<group>";
@@ -149,6 +176,13 @@
 				D77495C326314A360031E0E4 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		D77495EE26315A560031E0E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +201,10 @@
 			dependencies = (
 			);
 			name = "gk8 (iOS)";
+			packageProductDependencies = (
+				D77495E826315A200031E0E4 /* CodeScanner */,
+				D77495FF263162670031E0E4 /* CryptoSwift */,
+			);
 			productName = "gk8 (iOS)";
 			productReference = D77495A226314A360031E0E4 /* gk8.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +222,10 @@
 			dependencies = (
 			);
 			name = "gk8 (macOS)";
+			packageProductDependencies = (
+				D77495EF26315A560031E0E4 /* CodeScanner */,
+				D7749605263162770031E0E4 /* CryptoSwift */,
+			);
 			productName = "gk8 (macOS)";
 			productReference = D77495AA26314A360031E0E4 /* gk8.app */;
 			productType = "com.apple.product-type.application";
@@ -202,6 +244,9 @@
 				D77495B426314A360031E0E4 /* PBXTargetDependency */,
 			);
 			name = "Tests iOS";
+			packageProductDependencies = (
+				D774961A263178950031E0E4 /* CryptoSwift */,
+			);
 			productName = "Tests iOS";
 			productReference = D77495B226314A360031E0E4 /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -235,9 +280,11 @@
 				TargetAttributes = {
 					D77495A126314A360031E0E4 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					D77495A926314A360031E0E4 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					D77495B126314A360031E0E4 = {
 						CreatedOnToolsVersion = 12.3;
@@ -258,6 +305,10 @@
 				Base,
 			);
 			mainGroup = D774959526314A350031E0E4;
+			packageReferences = (
+				D77495E726315A200031E0E4 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				D77495FE263162670031E0E4 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = D77495A326314A360031E0E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,7 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77495C626314A360031E0E4 /* ContentView.swift in Sources */,
+				D77495E1263152270031E0E4 /* DecryptionUtil.swift in Sources */,
 				D77495C426314A360031E0E4 /* gk8App.swift in Sources */,
+				D77495F826315E0D0031E0E4 /* DecrypteHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +371,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77495C726314A360031E0E4 /* ContentView.swift in Sources */,
+				D77495E2263152270031E0E4 /* DecryptionUtil.swift in Sources */,
 				D77495C526314A360031E0E4 /* gk8App.swift in Sources */,
+				D77495F926315E0D0031E0E4 /* DecrypteHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D774960C263172FB0031E0E4 /* Tests_CryptoUtil.swift in Sources */,
+				D7749615263176350031E0E4 /* DecryptionUtil.swift in Sources */,
 				D77495B726314A360031E0E4 /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -481,6 +539,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.markoapps.gk8;
 				PRODUCT_NAME = gk8;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/gk8 (iOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,6 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -502,6 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.markoapps.gk8;
 				PRODUCT_NAME = gk8;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/gk8 (iOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -513,6 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -526,6 +589,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.markoapps.gk8;
 				PRODUCT_NAME = gk8;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/gk8 (macOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -535,6 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -548,6 +614,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.markoapps.gk8;
 				PRODUCT_NAME = gk8;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/gk8 (macOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -686,6 +753,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D77495E726315A200031E0E4 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+		D77495FE263162670031E0E4 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D77495E826315A200031E0E4 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D77495E726315A200031E0E4 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		D77495EF26315A560031E0E4 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D77495E726315A200031E0E4 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		D77495FF263162670031E0E4 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D77495FE263162670031E0E4 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		D7749605263162770031E0E4 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D77495FE263162670031E0E4 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		D774961A263178950031E0E4 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D77495FE263162670031E0E4 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D774959626314A350031E0E4 /* Project object */;
 }
